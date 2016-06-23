@@ -1,0 +1,331 @@
+@media (min-width: 360px) and (max-width: 480px) {
+
+    .minus{
+      width: 23x;
+      height: 23px;
+    }
+
+    /* modal table */
+    .shoppingcart {
+      width: 280px;
+    }
+
+    .shoppingcart th{
+      text-align: center;      
+      border-top: 0px; 
+    }
+
+    /* item_view table */
+    .shoppingcart th:nth-child(1){
+      text-align: center;
+      border-top: 0px;
+    }    
+    
+    .shoppingcart td:nth-child(1){
+      width: 25px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /* 제품유형 cell*/
+    .shoppingcart th:nth-child(2){
+      text-align: center;      
+      border-top: 0px;
+    }
+    
+    .shoppingcart td:nth-child(2){
+      width: 15px;
+      text-align: center;      
+      font-size: 13px;
+    }
+
+    /* 사용주기 cell*/
+    .shoppingcart th:nth-child(3){
+      text-align: center;      
+      border-top: 0px;
+    }
+    
+    .shoppingcart td:nth-child(3){
+      text-align: center;
+    }
+
+    .glyphicon-ok{
+      color: orange;
+      font-size: 20px;
+    }
+
+    .glyphicon-plus ,.glyphicon-shopping-cart{
+      color: #0E69AB;
+      font-size: 20px;
+    }
+
+    .glyphicon-minus{
+      color: #F73A3A;
+     font-size: 20px; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .minus{
+      width: 23x;
+      height: 23px;
+    }
+
+    /* modal table */
+    .shoppingcart {
+      width: 350px;
+      margin-top: 20px;
+    }
+
+    .shoppingcart th{
+      text-align: center;      
+      border-top: 0px; 
+      font-size: 17px;
+    }
+
+    .pnm{
+      width:125px;
+      border: 0px;  
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .pnm3{
+      width:77px;
+      border: 0px;  
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .pnm4{
+      width:25px;
+      border: 0px;  
+      text-align: center;
+    }
+
+    /* item_view table */
+    .shoppingcart th:nth-child(1){
+      text-align: center;
+      border-top: 0px;
+    }    
+    
+    .shoppingcart td:nth-child(1){
+      width: 25px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /* 제품유형 cell*/
+    .shoppingcart th:nth-child(2){
+      text-align: center;      
+      border-top: 0px;
+    }
+    
+    .shoppingcart td:nth-child(2){
+      width: 15px;
+      text-align: center;      
+      font-size: 13px;
+    }
+
+    /* 사용주기 cell*/
+    .shoppingcart th:nth-child(3){
+      text-align: center;      
+      border-top: 0px;
+    }
+    
+    .shoppingcart td:nth-child(3){
+      text-align: center;
+    }
+
+    .glyphicon-ok{
+      color: orange;
+      font-size: 20px;
+    }
+
+    .glyphicon-plus ,.glyphicon-shopping-cart{
+      color: #0E69AB;
+      font-size: 20px;
+    }
+
+    .glyphicon-minus{
+      color: #F73A3A;
+     font-size: 20px; 
+    }
+}
+
+/*@media (min-width: 769px) and (max-width: 992px) {*/
+@media (min-width: 992px) and (max-width: 1199px) {    
+  .minus{
+    width: 23x;
+    height: 23px;
+  }
+
+  /* modal table */
+  .shoppingcart {
+    width: 350px;
+  }
+
+  .shoppingcart th{
+    text-align: center;      
+    border-top: 0px; 
+    font-size: 17px;
+  }
+
+  .pnm{
+    width:125px;
+    border: 0px;  
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .pnm3{
+    width:77px;
+    border: 0px;  
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .pnm4{
+    width:25px;
+    border: 0px;  
+    text-align: center;
+  }
+
+  /* item_view table */
+  .shoppingcart th:nth-child(1){
+    text-align: center;
+    border-top: 0px;
+  }    
+  
+  .shoppingcart td:nth-child(1){
+    width: 25px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  /* 제품유형 cell*/
+  .shoppingcart th:nth-child(2){
+    text-align: center;      
+    border-top: 0px;
+  }
+  
+  .shoppingcart td:nth-child(2){
+    width: 15px;
+    text-align: center;      
+    font-size: 13px;
+  }
+
+  /* 사용주기 cell*/
+  .shoppingcart th:nth-child(3){
+    text-align: center;      
+    border-top: 0px;
+  }
+  
+  .shoppingcart td:nth-child(3){
+    text-align: center;
+  }
+
+  .glyphicon-ok{
+    color: orange;
+    font-size: 20px;
+  }
+
+  .glyphicon-plus ,.glyphicon-shopping-cart{
+    color: #0E69AB;
+    font-size: 20px;
+  }
+
+  .glyphicon-minus{
+    color: #F73A3A;
+   font-size: 20px; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .minus{
+    width: 23x;
+    height: 23px;
+  }
+
+  /* modal table */
+  .shoppingcart {
+    /*width: 350px;*/
+    margin-top: 5%;
+  }
+
+  .shoppingcart th{
+    text-align: center;      
+    border-top: 0px; 
+    font-size: 17px;
+  }
+
+  .pnm{
+    width:125px;
+    border: 0px;  
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .pnm3{
+    width:77px;
+    border: 0px;  
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .pnm4{
+    width:25px;
+    border: 0px;  
+    text-align: center;
+  }
+
+  /* item_view table */
+  .shoppingcart th:nth-child(1){
+    text-align: center;
+    border-top: 0px;
+  }    
+  
+  .shoppingcart td:nth-child(1){
+    width: 25px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  /* 제품유형 cell*/
+  .shoppingcart th:nth-child(2){
+    text-align: center;      
+    border-top: 0px;
+  }
+  
+  .shoppingcart td:nth-child(2){
+    width: 15px;
+    text-align: center;      
+    font-size: 13px;
+  }
+
+  /* 사용주기 cell*/
+  .shoppingcart th:nth-child(3){
+    text-align: center;      
+    border-top: 0px;
+  }
+  
+  .shoppingcart td:nth-child(3){
+    text-align: center;
+  }
+
+  .glyphicon-ok{
+    color: orange;
+    font-size: 20px;
+  }
+
+  .glyphicon-plus ,.glyphicon-shopping-cart{
+    color: #0E69AB;
+    font-size: 20px;
+  }
+
+  .glyphicon-minus{
+    color: #F73A3A;
+   font-size: 20px; 
+  }
+
+}
