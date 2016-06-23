@@ -1,0 +1,2354 @@
+<html>
+<head>
+  <title></title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link  rel="stylesheet" type="text/css" href="../static/css/mainstyle.css" />
+    <link  rel="stylesheet" type="text/css" href="../static/css/swipe.css" />
+    <link  rel="stylesheet" type="text/css" href="../static/css/tablesetting.css" />
+    <link  rel="stylesheet" type="text/css" href="../static/css/modaltable.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="../static/js/swipe.js"></script>
+    <script type="text/javascript" src="../static/js/appliance.js"></script>    
+    <script type="text/javascript" src="../static/js/bothsidefunction.js"></script>
+    <script type="text/javascript" src="../static/js/restFunction.js"></script>
+    <script type="text/javascript" src="../static/js/costCalculator.js"></script>    
+    <script type="text/javascript" src="../static/js/test4.js"></script>
+    <script type="text/javascript" src="../static/js/additem.js"></script>
+    <script type="text/javascript" src="../static/js/deleteitem.js"></script>
+    <script type="text/javascript" src="../static/js/sendata.js"></script>
+    <script type="text/javascript" src="../static/js/sendata2.js"></script>
+    <script type="text/javascript" src="../static/js/sendata3.js"></script>
+    <script type="text/javascript" src="../static/js/sendata4.js"></script>
+    <script type="text/javascript" src="../static/js/questionnaire.js"></script>
+</head>
+<body>
+        <nav class="navbar col-lg-offset-1" role="navigation">
+          <div class="container-fluid navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="sr-only">Toggle navigation</span> 
+                  <span class="icon-bar"></span> 
+                  <span class="icon-bar"></span> 
+                  <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand active" href="#home"> <img src="../static/img/logo2.png" class="logo"> </a> <!-- 우리집 전기세 -->
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse " id="navbarCollapse">
+              <ul class="nav navbar-nav">
+                  <li><a href="#intro">어바웃</a></li>
+                  <li><a onclick="scrollsmooth();">전기세 계산기</a></li> 
+                  <li><a href="#blog">블로그</a></li>
+                  <li><a href="#contact">연락처</a></li>
+              </ul>
+          </div>
+        </nav>
+
+        <!-- jumbotron text -->
+        <div class="jumbotron col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             <header>
+              <div class="header-content">
+                  <div class="header-content-inner col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="text-left col-lg-10 col-md-12 col-sm-9 col-xs-12"> <strong> 전기세 자가진단을 시작해보세요. </strong> </h1>
+                    <hr class="col-lg-5 col-md-10 col-sm-9 col-xs-7 col-xs-offset-2">
+                    <h4 class="col-lg-12 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">전기요금의 주범을 찾아 보고, 효율적인 가전제품 사용습관을 계획해보세요.</h4>
+                    <img src="../static/img/appliance.png" class="appliance col-lg-9 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+                    <button type="button" class="btn btn-success calculate col-xs-6 col-xs-offset-3" onclick="scrollsmooth();">계산하기</button>
+                  </div>
+                  <div class="col-lg-5 col-lg-offset-0 col-md-3 col-md-offset-4 col-sm-offset-3">
+                    <img src="../static/img/smartphone.png" class="smartphone">
+                  </div>
+              </div>
+             </header>
+        </div>        
+
+        <!-- intro -->
+        <div class="container intro_pc"/>
+          <h1 class="lead text-center">  복잡한 기계설치 없이 &nbsp;<strong><abbr class="initialism">집밖에서도</abbr></strong>&nbsp; 우리집 가전제품을 선택해보세요.
+          </h1> 
+        </div>
+
+        <div class="container intro"/>
+          <h5 class="lead text-center"> 복잡한 기계설치 없이 바로 시작할 수 있으며 <br> &nbsp;<strong><abbr class="initialism">집밖에서도</abbr></strong>&nbsp; 우리집 가전제품을 선택해보세요. </h5>  <!-- style="font-size: 25px;" -->
+        </div>
+
+        <!-- Page Features -->
+        <div class="container" id="intro"/>
+            <hr class="container col-lg-11 col-xs-11 service_title_hr" /></hr>
+              <div class="row col-xs-12 col-xs-offset-0 col-sm-3 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0 hero-feature"/>
+                <div class="thumbnail thumbnail_1 col-xs-12"/>
+                  <div class="caption text-center">
+                    <img src="../static/img/plus.png" />
+                    <h5 class="thumbnail_1_h5 text-center"/> 사용중인 가전제품의 전원을 켜주세요. </h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row col-xs-12 col-xs-offset-0 col-sm-4 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0 hero-feature">
+                <div class="thumbnail thumbnail_2">
+                  <div class="caption col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h4 class="text-left">&nbsp;&nbsp;<strong>주방가전</strong> &nbsp;&nbsp;<small>69.0 kW</small>&nbsp;&nbsp;<small>10,108 원</small></h4>          
+                    <div class="progress">           
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 23.6%">
+                        23.6% 
+                      </div>
+                    </div>
+                    <h4 class="text-left">&nbsp;&nbsp;<strong>생활가전</strong> &nbsp;&nbsp;<small>92.2 kW</small>&nbsp;&nbsp;<small>13,491 원</small></h4>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 31.5%">
+                        31.5%
+                      </div>
+                    </div>
+                    <h4 class="text-left">&nbsp;&nbsp;<strong>계절가전</strong> &nbsp;&nbsp;<small>131.5 kW</small>&nbsp;&nbsp;<small>19,231 원</small></h4>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 44.9%">
+                        44.9%
+                      </div>
+                    </div>
+                    <h5 class="thumbnail_2_h5 text-center"> 가정의 에너지 소비량을 분석해보세요. </h5>
+                  </div>
+                </div>
+              </div>
+
+          <div class="col-xs-12 col-xs-offset-0 col-sm-3 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0 hero-feature">
+            <div class="thumbnail thumbnail_3 col-xs-12"/>
+              <div class="caption text-center">
+                <img src="../static/img/clock.png" />
+                <h5 class="text-center thumbnail_3_h5"/> 3분 안에 연간 사용량까지 분석해볼수 있습니다. </h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Feature_Carousel -->
+        <div id="carousel" class="carousel slide col-sm-offset-2 col-sm-8 col-xs-12" data-ride="carousel" style="/*margin-bottom: 15%;*/"/>
+          <!-- Indicators -->
+          <ol class="carousel-indicators"/>
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner col-xs-12" role="listbox">
+            <div class="item item1 active">
+              <img src="../static/img/appliancpattern.png" alt="..." style=""/>
+              <div class="carousel-caption col-xs-12">
+                <h4 class="text-left"> 가전별 에너지 소비패턴 </h4>
+              </div>
+            </div>
+            <div class="item item2">
+              <img src="../static/img/rankingpattern.png" alt="..." style=""/>
+              <div class="carousel-caption col-xs-12">
+                <h4 class="text-left"> 전력소비량 기준 5위 가전제품</h4>
+              </div>
+            </div>
+            <div class="item item3">
+              <img src="../static/img/seasonpattern.png" alt="..." style=";"/>
+              <div class="carousel-caption col-xs-12 text-right">
+                <h4 class="text-left" > 연간 에너지 소비패턴 </h4>
+              </div>
+            </div>      
+          </div>
+
+          <!-- Carousel_Controls -->
+        <a href="#carousel" class="left carousel-control" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a href="#carousel" class="right carousel-control" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>  
+
+
+        <div class="container text-center col-md-offset-1 col-md-10 col-sm-12">
+          <h1 class="lead service_title_pc text-center">  우리집 전기세 계산기를 통해 &nbsp;<strong><abbr class="initialism">가전별 예상요금</abbr></strong>부터 &nbsp;<strong> <abbr class="initialism">연간 예상요금 </strong></abbr>까지 확인해보세요.
+          </h1>
+
+          <h1 class="lead service_title text-center"> 가전제품 선택만으로 <strong><abbr class="initialism">3 가지 분석 결과</abbr></strong>를 보실 수 있습니다. 
+
+          <!-- page_two div --> 
+          </h1>
+
+          <hr class="col-lg-11 col-xs-11 service_title_hr">
+        </div>
+        </strong>
+        </h1>
+        </div>
+        
+        <!-- Service Part -->
+        <div class="container service col-lg-6 col-md-6 col-sm-8 col-sm-offset-2" id="service" />
+          <h5 class="lead text-center" style="margin-bottom:15px;"> 가전별 패턴부터 연간 요금계산 까지 <br> 
+            <strong> <abbr class="initialism">단 3분 </abbr></strong>이면 됩니다.   </h5>  
+
+            <!-- service panel -->
+              <div class="panel panel1 panel-default col-lg-9">
+                <div class="panel-body">
+                  <div id='mySwipe' class='swipe'>
+                    <div class='swipe-wrap'>
+                      <!-- page_one div --> 
+                        <div class="page"><b>
+                          <!-- page_one questionnaire page -->
+                            <div class="text-center first_form_title">기본 사항 </div>
+                            <br>
+                              <form class="form-horizontal" style="margin-bottom: 40px;">
+                                <div class="form-group">
+                                  <label class="col-xs-3 col-xs-offset-1 control-label name"/>이름</label>
+                                  <div class="col-lg-5 col-xs-6 col-xs-offset-0 name_input"/>
+                                      <input class="form-control" id="user_nm" placeholder="이름"  onchange="namedirection();">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="col-xs-3 col-xs-offset-1 control-label sex"/>성별</label>
+                                  <div class="col-xs-5 col-xs-offset-0 sex_input"/>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="sex" id="sex0" value="female"> 남
+                                  </label>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="sex" id="sex1" value="male" checked> 여
+                                  </label>                    
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="col-xs-4 col-xs-offset-1 control-label housetype" style="">주거형태</label> 
+                                  <div class="col-xs-6 col-xs-offset-0" />
+                                    <div class="housetype_total_input" />
+                                      <label class="radio housetype_radio1" />
+                                        <input type="radio" name="housetype" id="housetype1" value="lower" onclick="radiochk();" /> 6층 미만 아파트
+                                      </label>      
+                                      <label class="radio housetype_radio2" />
+                                        <input type="radio" name="housetype" id="housetype2" value="higher" onclick="radiochk();" /> 6층 이상 아파트
+                                      </label>  
+                                    </div>
+                                    <div>
+                                      <label class="radio housetype_radio3" /> 
+                                        <input type="radio" name="housetype" id="housetype3" value="lower" onclick="radiochk();" checked /> 단독 및 연립주택
+                                      </label>                                  
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="col-xs-4 col-xs-offset-1 control-label family"/>가족수</label> 
+                                  <div class="familytype_total_input col-xs-5 col-xs-offset-0"/>
+                                    <label class="radio family_radio1" />
+                                      <input type="radio" name="family" id="family1" value="2" onclick=""> 3인 미만
+                                    </label>                    
+                                    <label class="radio family_radio2" />
+                                      <input type="radio" name="family" id="family2" value="4" onclick="" checked/> 5인 미만
+                                    </label>  
+                                    <label class="radio family_radio3" />
+                                      <input type="radio" name="family" id="family3" value="5" onclick=""/> 5인 이상
+                                    </label>
+                                </div>
+                              </div>
+                              </form>  
+                              <!-- page_one questionnaire page -->
+                              <!-- page_one questionnaire nav button -->
+                              <nav>
+                                <ul class="pager"> 
+                                  <li class="next" name="page1_pager" ><a onclick='mySwipe.next();'/> 다음 <span aria-hidden="true">&rarr;</span></a></li>  <!-- mySwipe.next() -->
+                                </ul>
+                              </nav>        
+                            <!-- page_one questionnaire nav button -->
+
+                            </b></div> <!-- page_one div -->
+                            <!-- page_two div -->  <div class="page"><b>
+
+                              <div class="container col-lg-11 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+
+                              <!-- question mark -->
+                                <img class="qst"  src="../static/img/qst2.png" data-toggle="modal" data-target=".qst_modal" data-backdrop="true" style="position: absolute;top: 7px;right: 7px;width: 10%;" />
+
+                                <!-- shopping cart -->
+                                <img src="../static/img/tool2.png" data-toggle="modal" data-target=".modal1" data-backdrop="true"/>
+
+                                <span class="badge"/> <span class="item_view1_badge" id="item_view1_badge"> </span> </span>
+                                  <div class="text-center form_title" style="font-size: 17px;margin-top: 25px;">1. 필수가전을 추가해주세요 </div>
+
+                                    <table class="table first_tables" id="first_tables" style="margin-top: 15px;margin-bottom: 0px;"/>
+                                      <thead>
+                                        <tr>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> 제품명 </h4></th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;">제품유형 </th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> 사용주기 </th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> 사용시간 </th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> </th> 
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>냉장고
+                                              <input type="hidden" id="item1_name" value="냉장고"/>      
+                                          </td>
+                                          <td >
+                                            <select class="sel" id="item1_pty" onclick="test();" /> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item1_wk"/> 사용주기
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <select class="sel3" id="item1_wkd"/> 시간
+                                            </select> 
+                                          </td>
+                                          <td>  <!-- (id, tableid, type, place, season) -->
+                                            <img src="../static/img/sign16.png" name="item" id="item1" onclick="chkitem('item1', 'item_view1','item2','kitchen','both');"/>
+                                                <!-- window ready 필수 인자 -->
+                                                <input type="hidden" id="item1_watt" value="0"/> 
+                                                <input type="hidden" id="item1_place" value="kitchen"/>
+                                                <input type="hidden" id="item1_season" value="both"/>
+                                                <input type="hidden" id="item1_table" value="item_view1"/>
+
+                                                <!-- selectbox pre_choose 필수 인자 -->
+                                                <input type="hidden" id="item1_prepty" value="3"/>
+                                                <input type="hidden" id="item1_pretype" value="item2"/>
+                                                <input type="hidden" id="item1_prewk" value="1"/>
+                                                <input type="hidden" id="item1_prewkd" value="24"/>
+                                          </td>                    
+                                        </tr>       
+                                        <tr>
+                                          <td>전기밥솥
+                                            <input type="hidden" id="item4_name" value="전기밥솥"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item4_pty"/> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item4_wk"/> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item4_wkd"/> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item4" onclick="chkitem('item4', 'item_view1','item2','kitchen','both')"/>
+                                                <input type="hidden" id="item4_watt" value="0"/> 
+                                                <input type="hidden" id="item4_place" value="kitchen"/>
+                                                <input type="hidden" id="item4_season" value="both"/>
+                                                <input type="hidden" id="item4_table" value="item_view1"/>
+
+                                                <input type="hidden" id="item4_prepty" value="2"/>
+                                                <input type="hidden" id="item4_pretype" value="item2"/>
+                                                <input type="hidden" id="item4_prewk" value="2"/>
+                                                <input type="hidden" id="item4_prewkd" value="4"/>
+                                              </td>                    
+                                        </tr>   
+                                        <tr>
+                                          <td>김치냉장고
+                                            <input type="hidden" id="item5_name" value="김치냉장고"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item5_pty"/> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item5_wk"/> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item5_wkd"/> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item5" onclick="chkitem('item5', 'item_view1','item2','kitchen','both')"/>
+                                                <input type="hidden" id="item5_watt" value="0"/> 
+                                                <input type="hidden" id="item5_place" value="kitchen"/>
+                                                <input type="hidden" id="item5_season" value="both"/>
+                                                <input type="hidden" id="item5_table" value="item_view1"/>
+
+                                                <input type="hidden" id="item5_prepty" value="5"/>
+                                                <input type="hidden" id="item5_pretype" value="item2"/>
+                                                <input type="hidden" id="item5_prewk" value="1"/>
+                                                <input type="hidden" id="item5_prewkd" value="24"/>
+                                              </td>                    
+                                        </tr>
+                                        <tr>
+                                          <td>전자레인지
+                                            <input type="hidden" id="item10_name" value="전자레인지"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item10_pty"/> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item10_wk"/> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item10_wkd"/> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item10" onclick="chkitem('item10', 'item_view1','item2','kitchen','both')"/>
+                                                <input type="hidden" id="item10_watt" value="0"/>
+                                                <input type="hidden" id="item10_place" value="kitchen"/>
+                                                <input type="hidden" id="item10_season" value="both"/>
+                                                <input type="hidden" id="item10_table" value="item_view1"/>
+
+                                                <input type="hidden" id="item10_prepty" value="1"/>
+                                                <input type="hidden" id="item10_pretype" value="item2"/>
+                                                <input type="hidden" id="item10_prewk" value="2"/>
+                                                <input type="hidden" id="item10_prewkd" value="2"/>
+                                              </td>                    
+                                        </tr>                                        
+                                        <tr>
+                                          <td>TV
+                                            <input type="hidden" id="item13_name" value="TV"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item13_pty" /> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item13_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item13_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item13" onclick="chkitem('item13', 'item_view1','item2','living','both')"/>
+                                                <input type="hidden" id="item13_watt" value="0"/> 
+                                                <input type="hidden" id="item13_place" value="living"/>
+                                                <input type="hidden" id="item13_season" value="both"/>
+                                                <input type="hidden" id="item13_table" value="item_view1"/>
+
+                                                <input type="hidden" id="item13_prepty" value="3"/>
+                                                <input type="hidden" id="item13_pretype" value="item2"/>
+                                                <input type="hidden" id="item13_premn" value="1"/>
+                                                <input type="hidden" id="item13_prewk" value="1"/>
+                                                <input type="hidden" id="item13_prewkd" value="6"/>         
+                                              </td>                    
+                                        </tr>   
+                                        <tr>
+                                          <td>세탁기
+                                            <input type="hidden" id="item17_name" value="세탁기"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item17_pty" /> 제품유형
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <select class="sel2" id="item17_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item17_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item17" onclick="chkitem('item17', 'item_view1','item2','living','both')" />
+                                                <input type="hidden" id="item17_watt" value="0"/> 
+                                                <input type="hidden" id="item17_place" value="living"/>
+                                                <input type="hidden" id="item17_season" value="both"/>
+                                                <input type="hidden" id="item17_table" value="item_view1"/>
+
+                                                <input type="hidden" id="item17_prepty" value="4"/>
+                                                <input type="hidden" id="item17_pretype" value="item2"/>
+                                                <input type="hidden" id="item17_prewk" value="2"/>
+                                                <input type="hidden" id="item17_prewkd" value="3"/> 
+                                              </td>                    
+                                        </tr> 
+                                        <tr>
+                                          <td>드럼세탁기
+                                              <input type="hidden" id="item31_name" value="드럼세탁기"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item31_pty" /> 제품유형
+                                            </select> 
+                                          </td>
+                                              <td/> 
+                                            <select class="sel2" id="item31_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item31_wkd" /> 사용시간
+
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item31" onclick="chkitem('item31', 'item_view1','item2','living','both')"/>
+                                                <input type="hidden" id="item31_watt" value="0"/> 
+                                                <input type="hidden" id="item31_place" value="living"/>
+                                                <input type="hidden" id="item31_season" value="both"/>
+                                                <input type="hidden" id="item31_table" value="item_view1"/>
+
+                                                <input type="hidden" id="item31_prepty" value="6"/>
+                                                <input type="hidden" id="item31_pretype" value="item2"/>
+                                                <input type="hidden" id="item31_prewk" value="2"/>
+                                                <input type="hidden" id="item31_prewkd" value="3"/>
+                                          </td>                    
+                                        </tr>
+                                        <tr>
+                                          <td>형광등
+                                            <input type="hidden" id="item14_name" value="형광등"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item14_pty" /> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item14_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item14_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item14" onclick="chkitem('item14', 'item_view1','item2','living','both')"/>
+                                                <input type="hidden" id="item14_watt" value="0"/> 
+                                                <input type="hidden" id="item14_place" value="living"/>
+                                                <input type="hidden" id="item14_season" value="both"/>
+                                                <input type="hidden" id="item14_table" value="item_view1"/>
+
+                                                <input type="hidden" id="item14_prepty" value="2"/>
+                                                <input type="hidden" id="item14_pretype" value="item2"/>
+                                                <input type="hidden" id="item14_prewk" value="1"/>
+                                                <input type="hidden" id="item14_prewkd" value="5"/> 
+                                          </td>                    
+                                        </tr>                                  
+                                      </tbody>
+                                    </table>
+                                  </div>
+
+                                  <!-- page_two questionnaire nav button -->
+                                  <nav>
+                                    <ul class="pager">
+                                      <li class="previous"><a onclick='mySwipe.prev();firstpage_swipe();'><span aria-hidden="true">&larr;</span> 이전</a></li>
+                                      <li class="next"><a onclick='mySwipe.next()'> 다음 <span aria-hidden="true">&rarr;</span></a></li>
+                                    </ul>
+                                  </nav>
+                                  <!-- page_two questionnaire nav button -->
+
+                              </b></div> 
+                              <!-- page_two div -->   
+
+                              <!-- page_third div -->
+                              <div class="page"> <b>
+
+                                <div class="container col-lg-11 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+                                  <div class="text-center form_title" style="font-size: 17px;margin-top: 25px;">2. 부수가전을 추가해주세요 </div>
+                              
+                                  <img class="qst"  src="../static/img/qst2.png" data-toggle="modal" data-target=".qst_modal" data-backdrop="true" style="position: absolute;top: 7px;right: 7px;width: 10%;" />
+
+                                  <img src="../static/img/tool2.png" data-toggle="modal" data-target=".modal2" data-backdrop="true"/>
+
+                                  <span class="badge"/> <span class="item_view2_badge" id="item_view2_badge"> </span> </span>
+
+                                    <table class="table first_tables" id="first_tables" style="margin-top: 15px;margin-bottom: 0px;"/>
+                                      <thead>
+                                        <tr>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> 제품명 </h4></th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> 제품유형 </th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> 사용주기 </th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> 사용시간 </th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> </th>          
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>비데
+                                              <input type="hidden" id="item11_name" value="비데"/>      
+                                          </td>
+                                          <td >
+                                            <select class="sel" id="item11_pty"> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item11_wk"> 사용주기
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <select class="sel3" id="item11_wkd"> 시간
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item11" onclick="chkitem('item11', 'item_view2','item2','living','both')" />
+                                                <input type="hidden" id="item11_watt" value="0"/> 
+                                                <input type="hidden" id="item11_place" value="living"/>
+                                                <input type="hidden" id="item11_season" value="both"/>
+                                                <input type="hidden" id="item11_table" value="item_view2"/>
+
+                                                <input type="hidden" id="item11_prepty" value="1"/>
+                                                <input type="hidden" id="item11_pretype" value="item2"/>
+                                                <input type="hidden" id="item11_prewk" value="3"/>
+                                                <input type="hidden" id="item11_prewkd" value="1"/>
+                                          </td>                    
+                                        </tr>       
+                                        <tr>
+                                          <td>충전기
+                                            <input type="hidden" id="item21_name" value="충전기"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item21_pty"/> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item21_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item21_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item21" onclick="chkitem('item21', 'item_view2','item2','living','both')"/>
+                                                <input type="hidden" id="item21_watt" value="0"/> 
+                                                <input type="hidden" id="item21_place" value="living"/>
+                                                <input type="hidden" id="item21_season" value="both"/>
+                                                <input type="hidden" id="item21_table" value="item_view2"/>
+
+                                                <input type="hidden" id="item21_prepty" value="1"/>
+                                                <input type="hidden" id="item21_pretype" value="item2"/>
+                                                <input type="hidden" id="item21_prewk" value="1"/>
+                                                <input type="hidden" id="item21_prewkd" value="3"/>  
+                                              </td>                    
+                                        </tr>   
+                                        <tr>
+                                          <td>컴퓨터
+                                            <input type="hidden" id="item18_name" value="컴퓨터"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item18_pty" /> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item18_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item18_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item18" onclick="chkitem('item18', 'item_view2','item2','living','both')"/>
+                                                <input type="hidden" id="item18_watt" value="0"/> 
+                                                <input type="hidden" id="item18_place" value="living"/>
+                                                <input type="hidden" id="item18_season" value="both"/>
+                                                <input type="hidden" id="item18_table" value="item_view2"/>
+
+                                                <input type="hidden" id="item18_prepty" value="5"/>
+                                                <input type="hidden" id="item18_pretype" value="item2"/>
+                                                <input type="hidden" id="item18_prewk" value="2"/>
+                                                <input type="hidden" id="item18_prewkd" value="4"/>
+                                              </td>                    
+                                        </tr>
+                                        <tr>
+                                          <td>모니터
+                                            <input type="hidden" id="item19_name" value="모니터"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item19_pty"> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item19_wk"> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item19_wkd"> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item19" onclick="chkitem('item19', 'item_view2','item2','living','both')"/>
+                                                <input type="hidden" id="item19_watt" value="0"/> 
+                                                <input type="hidden" id="item19_place" value="living"/>
+                                                <input type="hidden" id="item19_season" value="both"/>
+                                                <input type="hidden" id="item19_table" value="item_view2"/>
+
+                                                <input type="hidden" id="item19_prepty" value="5"/>
+                                                <input type="hidden" id="item19_pretype" value="item2"/>
+                                                <input type="hidden" id="item19_prewk" value="2"/>
+                                                <input type="hidden" id="item19_prewkd" value="4"/>
+                                              </td>                    
+                                        </tr>                                        
+                                        <tr>
+                                          <td>노트북
+                                            <input type="hidden" id="item22_name" value="노트북"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item22_pty" /> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item22_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item22_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item22" onclick="chkitem('item22', 'item_view2','item2','living','both')"/>
+                                                <input type="hidden" id="item22_watt" value="0"/>
+                                                <input type="hidden" id="item22_place" value="living"/>
+                                                <input type="hidden" id="item22_season" value="both"/>
+                                                <input type="hidden" id="item22_table" value="item_view2"/>
+
+                                                <input type="hidden" id="item22_prepty" value="3"/> 
+                                                <input type="hidden" id="item22_pretype" value="item2"/>
+                                                <input type="hidden" id="item22_prewk" value="1"/>
+                                                <input type="hidden" id="item22_prewkd" value="4"/>
+                                          </td>                    
+                                        </tr>   
+                                        <tr>
+                                          <td>IPTV
+                                            <input type="hidden" id="item23_name" value="IPTV"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item23_pty" /> 제품유형
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <select class="sel2" id="item23_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item23_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item23" onclick="chkitem('item23', 'item_view2','item2','living','both')"/>
+                                                <input type="hidden" id="item23_watt" value="0"/>
+                                                <input type="hidden" id="item23_place" value="living"/>
+                                                <input type="hidden" id="item23_season" value="both"/>
+                                                <input type="hidden" id="item23_table" value="item_view2"/>
+
+                                                <input type="hidden" id="item23_prepty" value="1"/> 
+                                                <input type="hidden" id="item23_pretype" value="item2"/>
+                                                <input type="hidden" id="item23_prewk" value="1"/>
+                                                <input type="hidden" id="item23_prewkd" value="6"/>  
+                                              </td>                    
+                                        </tr> 
+                                        <tr>
+                                          <td>드라이기
+                                              <input type="hidden" id="item24_name" value="드라이기"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item24_pty" /> 제품유형
+                                            </select> 
+                                          </td>
+                                              <td/> 
+                                            <select class="sel2" id="item24_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item24_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item24" onclick="chkitem('item24', 'item_view2','item2','living','both')"/>
+                                                <input type="hidden" id="item24_watt" value="0"/> 
+                                                <input type="hidden" id="item24_place" value="living"/>
+                                                <input type="hidden" id="item24_season" value="both"/>
+                                                <input type="hidden" id="item24_table" value="item_view2"/>
+                                                <input type="hidden" id="item24_prepty" value="1"/>
+                                                <input type="hidden" id="item24_pretype" value="item2"/>
+                                                <input type="hidden" id="item24_prewk" value="2"/>
+                                                <input type="hidden" id="item24_prewkd" value="2"/> 
+                                          </td>                    
+                                        </tr>
+                                        <tr>
+                                          <td>다리미
+                                            <input type="hidden" id="item16_name" value="다리미"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item16_pty" /> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item16_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item16_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item16" onclick="chkitem('item16', 'item_view2','item2','living','both')"/>
+                                                <input type="hidden" id="item16_watt" value="0"/> 
+                                                <input type="hidden" id="item16_place" value="living"/>
+                                                <input type="hidden" id="item16_season" value="both"/>
+                                                <input type="hidden" id="item16_table" value="item_view2"/>
+
+                                                <input type="hidden" id="item16_prepty" value="1"/>
+                                                <input type="hidden" id="item16_pretype" value="item2"/>
+                                                <input type="hidden" id="item16_prewk" value="2"/>
+                                                <input type="hidden" id="item16_prewkd" value="1"/> 
+                                          </td>                    
+                                        </tr>                                  
+                                      </tbody>
+                                    </table>
+                                  </div>
+
+                                  <!-- page_third questionnaire nav button -->
+                                  <nav>
+                                    <ul class="pager">
+                                      <li class="previous"><a onclick='mySwipe.prev();'><span aria-hidden="true">&larr; 이전 </span></a></li>
+                                      <li class="next "><a onclick='mySwipe.next()'><span aria-hidden="true"> 다음 &rarr;</span></a></li>
+                                    </ul>
+                                  </nav>
+                                  <!-- page_third questionnaire nav button -->
+
+                              </b></div>
+                              <!-- page_third end div -->
+
+                              <!-- page_third div -->
+                              <div class="page"> <b>
+                                <div class="container col-lg-11 col-lg-offset-1 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+                                  <div class="text-center form_title" style="font-size: 17px;margin-top: 25px;">3. 계절가전을 추가해주세요 </div>
+
+                                    <img class="qst"  src="../static/img/qst2.png" data-toggle="modal" data-target=".qst_modal" data-backdrop="true" style="position: absolute;top: 7px;right: 7px;width: 10%;" />
+
+                                    <img src="../static/img/tool2.png" data-toggle="modal" data-target=".modal3" data-backdrop="true"/>
+
+                                    <span class="badge"/> <span class="item_view3_badge" id="item_view3_badge"> </span> </span>
+
+                                    <table class="table first_tables" id="first_tables" style="margin-top: 15px;margin-bottom: 0px;"/>
+                                      <thead>
+                                        <tr>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> 제품명 </h4></th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> 제품유형 </th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> 사용주기 </th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;">사용시간 </th>
+                                          <th class="text-center" style="border-bottom: 0.15em solid DarkGray;"> </th> 
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>선풍기
+                                              <input type="hidden" id="item26_name" value="선풍기"/>      
+                                          </td>
+                                          <td >
+                                            <select class="sel" id="item26_pty" /> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item26_wk" /> 사용주기
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <select class="sel3" id="item26_wkd" /> 시간
+                                            </select> 
+                                          </td>
+                                          <td > 
+                                            <img src="../static/img/sign16.png" name="item" id="item26" onclick="chkitem('item26', 'item_view3','item2','season','summer')"/>
+                                                <input type="hidden" id="item26_watt" value="0"/> 
+                                                <input type="hidden" id="item26_place" value="season"/>
+                                                <input type="hidden" id="item26_season" value="summer"/>
+                                                <input type="hidden" id="item26_table" value="item_view3"/>
+
+                                                <input type="hidden" id="item26_prepty" value="1"/>
+                                                <input type="hidden" id="item26_pretype" value="item2"/>
+                                                <input type="hidden" id="item26_prewk" value="1"/>
+                                                <input type="hidden" id="item26_prewkd" value="7"/>
+                                          </td>                    
+                                        </tr>       
+                                        <tr>
+                                          <td>에어컨
+                                            <input type="hidden" id="item25_name" value="에어컨"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item25_pty" /> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item25_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item25_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item25" onclick="chkitem('item25', 'item_view3','item2','season','summer')"/>
+                                                <input type="hidden" id="item25_watt" value="0"/>
+                                                <input type="hidden" id="item25_place" value="season"/>
+                                                <input type="hidden" id="item25_season" value="summer"/>
+                                                <input type="hidden" id="item25_table" value="item_view3"/>
+
+                                                <input type="hidden" id="item25_prepty" value="3"/>
+                                                <input type="hidden" id="item25_pretype" value="item2"/>
+                                                <input type="hidden" id="item25_prewk" value="1"/>
+                                                <input type="hidden" id="item25_prewkd" value="6"/> 
+                                          </td>
+                                        </tr>   
+                                        <tr>
+                                          <td>온풍기
+                                            <input type="hidden" id="item27_name" value="온풍기"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item27_pty" /> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item27_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item27_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item27" onclick="chkitem('item27', 'item_view3','item2','season','winter')"/>
+                                                <input type="hidden" id="item27_watt" value="0"/>
+                                                <input type="hidden" id="item27_place" value="season"/>
+                                                <input type="hidden" id="item27_season" value="winter"/>
+                                                <input type="hidden" id="item27_table" value="item_view3"/>
+
+                                                <input type="hidden" id="item27_prepty" value="3"/> 
+                                                <input type="hidden" id="item27_pretype" value="item2"/>
+                                                <input type="hidden" id="item27_prewk" value="1"/>
+                                                <input type="hidden" id="item27_prewkd" value="6"/>  
+                                              </td>                    
+                                        </tr>
+                                        <tr>
+                                          <td>전열난로
+                                            <input type="hidden" id="item28_name" value="전열난로"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item28_pty"/> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item28_wk"/> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item28_wkd"/> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item28" onclick="chkitem('item28', 'item_view3','item2','season','winter')"/>
+                                                <input type="hidden" id="item28_watt" value="0"/>
+                                                <input type="hidden" id="item28_place" value="season"/>
+                                                <input type="hidden" id="item28_season" value="winter"/>
+                                                <input type="hidden" id="item28_table" value="item_view3"/>
+
+
+                                                <input type="hidden" id="item28_prepty" value="1">
+                                                <input type="hidden" id="item28_pretype" value="item2"/>
+                                                <input type="hidden" id="item28_prewk" value="1"/>
+                                                <input type="hidden" id="item28_prewkd" value="6"/>  
+                                              </td>                    
+                                        </tr>                                        
+                                        <tr>
+                                          <td>온수매트
+                                            <input type="hidden" id="item29_name" value="온수매트"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item29_pty" /> 제품유형
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel2" id="item29_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item29_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item29" onclick="chkitem('item29', 'item_view3','item2','season','winter')"/>
+                                                <input type="hidden" id="item29_watt" value="0"/>
+                                                <input type="hidden" id="item29_pretype" value="item2"/>
+                                                <input type="hidden" id="item29_place" value="season"/>
+                                                <input type="hidden" id="item29_season" value="winter"/>
+                                                <input type="hidden" id="item29_table" value="item_view3"/>
+
+                                                <input type="hidden" id="item29_prepty" value="2"/>
+                                                <input type="hidden" id="item29_premn" value="1"/>
+                                                <input type="hidden" id="item29_prewk" value="1"/>
+                                                <input type="hidden" id="item29_prewkd" value="8"/>  
+                                              </td>                    
+                                        </tr>   
+                                        <tr>
+                                          <td>전기장판
+                                            <input type="hidden" id="item30_name" value="전기장판"/>      
+                                          </td>
+                                          <td>
+                                            <select class="sel" id="item30_pty" /> 제품유형
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <select class="sel2" id="item30_wk" /> 사용주기
+                                            </select> 
+                                          </td>
+                                          <td> 
+                                            <select class="sel3" id="item30_wkd" /> 사용시간
+                                            </select> 
+                                          </td>                                    
+                                          <td> 
+                                            <img src="../static/img/sign16.png" name="item" id="item30" onclick="chkitem('item30', 'item_view3','item2','season','winter')"/>
+                                                <input type="hidden" id="item30_watt" value="0"/>
+                                                <input type="hidden" id="item30_pretype" value="item2"/>
+                                                <input type="hidden" id="item30_place" value="season"/>
+                                                <input type="hidden" id="item30_season" value="winter"/>
+                                                <input type="hidden" id="item30_table" value="item_view3"/>
+
+                                                <input type="hidden" id="item30_prepty" value="3"/> 
+                                                <input type="hidden" id="item30_prewk" value="1"/>
+                                                <input type="hidden" id="item30_prewkd" value="7"/>
+                                              </td>                    
+                                        </tr>                                  
+                                      </tbody>
+                                    </table>
+                                  </div>
+
+                                  <!-- page_third questionnaire nav button -->
+                                  <nav>
+                                    <ul class="pager">
+                                      <li class="previous"><a onclick='mySwipe.prev()'> <span aria-hidden="true">&larr; 이전</span></a></li>
+                                    </ul>
+                                  </nav>
+                                  <!-- page_third questionnaire nav button -->
+                              </b></div>
+                              <!-- page_third end div -->
+                        </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>  <!-- service container end -->
+
+              <div class="pcresult col-lg-4 col-md-6 col-sm-6"> 
+                <div class="panel panel1 panel-default" style="background-color: #FFFFFF">
+                    <div class="panel-heading text-center" style="font-size: 17px;color: black;"><strong>장바구니</strong> </div>
+                  <div class="panel-body">
+
+                    <div class="container col-lg-12 col-md-12 col-sm-12 text-center">
+                      <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                          <li class="active" style="width: 33%;"><a href="#red" data-toggle="tab">필수가전
+                          <span class="badge"/> <span class="item_view1_badge" id="item_view1_pc_badge"> </span> </span> </a></li>
+                          <li style="width: 33%;"><a href="#orange" data-toggle="tab">부수가전
+                          <span class="badge"/> <span class="item_view2_badge" id="item_view2_pc_badge"> </span> </span></a></li>
+                          <li style="width: 33%;"><a href="#yellow" data-toggle="tab">계절가전
+                          <span class="badge"/> <span class="item_view3_badge" id="item_view3_pc_badge"> </span></span></a></li>
+                      </ul>
+                      <div id="my-tab-content" class="tab-content">
+                          <div class="tab-pane active" id="red">
+                            <div style="height:380px; overflow:auto;">
+                              <table id="item_view1_pc" class="table shoppingcart item_view1 col-lg-12">
+                                  <th class="text-center">추가 제품</th>
+                                  <th class="text-center">사용내역</th>  
+                                  <th class="text-center">삭제</th>  
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="orange">
+                            <div style="height:380px; overflow:auto;">
+                              <table id="item_view2_pc" class="table shoppingcart item_view2 col-lg-12">
+                                <th class="text-center">추가 제품</th>
+                                <th class="text-center">사용내역</th>  
+                                <th class="text-center">삭제</th>  
+                              </table>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="yellow">
+                            <div style="height:380px; overflow:auto;">
+                              <table id="item_view3_pc" class="table shoppingcart item_view3 col-lg-12">
+                                <th class="text-center">추가 제품</th>
+                                <th class="text-center">사용내역</th>  
+                                <th class="text-center">삭제</th>  
+                              </table>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+                  </div> <!-- panel1 panel-body -->
+                </div> <!-- panel1 end-point -->
+              </div> <!-- pcresult -->
+
+
+
+<div class="container cost_alaytics col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-12">
+    <div class="panel panel2 panel-info">
+        <div class="panel-heading">
+            <strong> 요금 청구내역 </strong>
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="cost_result1 col-md-4 col-sm-5">
+             <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a data-toggle="tab" href="#menu1">기본내역</a></li>
+                <li><a data-toggle="tab" href="#menu2">상세내역</a></li>
+            </ul>
+
+            <div class="tab-content" >
+                <div id="menu1" class="tab-pane active">
+                  <table class="table">
+                    <tr>
+                      <td> <div id="date_display"></div> <input type="hidden" id="date"> </td>
+                      <td> <div id="user_display"></div> <input type="hidden" id="user" value=" "> </td>
+                    </tr>
+                    <tr>
+                        <td> 적용주택 요금:  </td>
+                        <td><div id="price_level_display"></div> <input type="hidden" id="price_level"></td>
+                    </tr>
+                    <tr>
+                        <td> 누진세 단계: </td>
+                        <td> <input id="level" size="8" style="text-align:left;border: 0px solid black" readonly/></td>
+                    </tr>     
+                    <tr>
+                        <td> 전기 요금: </td>
+                        <td>  <div id="demo6_cost_display"> </div> <input type="hidden" id="demo6_cost" />  
+                            <input type="hidden" id="total_fee">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 사용량: </td>
+                        <td> <div id="demo6watt_display"></div><input type="hidden" id="demo6"/> </td>
+                    </tr>
+                    <tr>
+                        <td> 가전 제품수: </td>
+                        <td> <input id="use_number" size="8" style="text-align:left;border: 0px" readonly/></td>
+                    </tr>
+                  </table>
+                </div>
+
+            <div id="menu2" class="tab-pane fade">
+              <table class="table">
+                <tr>
+                  <td class="col-sm-10"> 기본 요금 </td>
+                  <td class="col-sm-2"> <input id="base" size="9" style="text-align:right;border: 0px" readonly /> </td class="col-sm-9">       
+                  </tr>
+                  <tr> 
+                      <td> 전력량 요금 </td>
+                      <td> <input id="elec_level" size="9" style="text-align:right;border: 0px" readonly /> </td>       
+                  </tr>      
+                  <tr>
+                      <td> 복지 할인 </td>
+                      <td> <input id="welfare" size="9" style="text-align:right;border: 0px" value="(준비중)" readonly />  </td>       
+                  </tr>      
+                  <tr>
+                      <td> 전기요금계 </td>
+                      <td> <input id="base_total" size="9" style="text-align:right;border: 0px" readonly /> </td>
+                  </tr>
+                  <tr>
+                      <td> 부가가치세 </td>
+                      <td> <input id="vat" size="9" style="text-align:right;border: 0px" readonly /> </td>
+                  </tr>
+                  <tr>
+                      <td> 전력산업 발전기금 </td>
+                      <td> <input id="fund" size="9" style="text-align:right;border: 0px solid black" readonly /> </td>
+                  </tr>
+                  <tr>
+                      <td> 청구 금액 </td>
+                      <td> <input id="demo6_cost2" size="9" style="text-align:right;border: 0px" readonly /> </td>
+                  </tr>
+              </table>
+              <div class="col-lg-offset-7" style="margin-top: -15px;">
+                <button type="button" class="btn btn-primary btn-inline qstbtn" data-toggle="modal" data-target=".questionnaire1" data-backdrop="true" />설문 참여하기</button>
+              </div>              
+          </div>
+      </div>
+  </div>
+  <div class="cost_result1 col-sm-7 col-md-7 col-md-offset-1 col-lg-7">
+     <ul class="nav nav-tabs nav-justified">
+        <li><a data-toggle="tab" href="#menu1-1">가전별 패턴</a></li>
+        <li class="active"><a data-toggle="tab" href="#menu2-1">제품별 패턴</a></li>
+        <li><a data-toggle="tab" href="#menu3-1">연간 패턴</a></li>
+
+    </ul>
+    <div class="tab-content">
+        <div id="menu1-1" class="tab-pane fade">
+            <table class="table text-center">
+                <tr>
+                  <td colspan="2">           
+                    <input type="hidden" id="kitchen"/>  
+                    <input type="hidden" id="kitchen_share"/>   
+                    <input type="hidden" id="kitchen_cost"/>                                            
+                    <h4 class="text-left">&nbsp;&nbsp;<b>주방가전</b> &nbsp;&nbsp;<small id="kitchen_display"></small>&nbsp;&nbsp;<small id="kitchen_dis_cost"></small>
+                    </h4>     
+                    <div class="progress progress-sm" style="height:18px;margin-bottom:-.01em;">
+                      <div class="progress-bar progress-bar-info" id="kitchen_bar" aria-valuemin="0" aria-valuemax="100"/> <b> <div id="kitchen_percentage"></div> <body> </div>
+                  </div>
+              </td>
+          </tr>                
+          <tr>
+             <td colspan="2">       
+                <input type="hidden" id="living"/> 
+                <input type="hidden" id="living_share"/> 
+                <input type="hidden" id="living_cost"/>                                                                   
+                <h4 class="text-left">&nbsp;&nbsp;<b>생활가전</b> &nbsp;&nbsp;<small id="living_display"></small>&nbsp;&nbsp;<small id="living_dis_cost"></small>
+                </h4>  
+                <div class="progress progress-sm" style="height:18px;margin-bottom:-.01em;">
+                    <div class="progress-bar progress-bar-success" id="living_bar" aria-valuemin="0" aria-valuemax="100"/> <b> <div id="living_percentage"></div> </b></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">     
+                <input type="hidden" id="season"/>
+                <input type="hidden" id="season_share"/>  
+                <input type="hidden" id="season_cost"/>                                                                    
+                <h4 class="text-left">&nbsp;&nbsp;<b>계절가전</b> &nbsp;&nbsp;<small id="season_display"></small>&nbsp;&nbsp;<small id="season_dis_cost"></small>  
+                </h4>
+                <div class="progress progress-sm" style="height:18px;margin-bottom:-.01em;">
+                   <div class="progress-bar progress-bar-warning" id="season_bar" aria-valuemin="0" aria-valuemax="100"/> <b> <div id="season_percentage"></div> </b></div>
+               </div>
+           </td>
+       </tr>                  
+   </table>
+</div>
+<div id="menu2-1" class="tab-pane active" >
+  <table class="table text-center ranking_five_table col-xs-12">
+    <tr>
+      <th class="col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center"> # </th>
+      <th class="col-xs-5 col-sm-3 col-md-3 col-lg-2 text-center"> 제품 </th>
+      <th class="col-xs-3 col-sm-2 col-md-2 col-lg-2 text-center"> 사용량 </th>    
+      <th class="col-xs-2 col-sm-2 col-md-3 col-lg-2 text-center"> 요금</th>    
+      <th class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-center"> 비율</th>                      
+  </tr>
+  <tr> 
+      <td>  1  </td>
+      <td> <input type="hidden" id="Array1_name" /> <div id="Array1_name_dis"> </div> </td>
+      <td > <input type="hidden" id="Array1_watt" /> <div id="Array1_watt_dis" style="display: inline;" /> </div> <div id="Array1_wattunit" style="display: inline;"/> </div>  </td>    
+      <td> <input type="hidden" id="Array1_cost" /> <div id="Array1_cost_dis" style="display: inline;" /></div> <div id="Array1_wonunit" style="display: inline;"/> </div></td> 
+      <td> <input type="hidden" id="Array1_share" />  <div id="Array1_share_dis" style="display: inline;" /></div> <div id="Array1_percent" style="display: inline;"/> </div> </td>
+  </tr>      
+  <tr>
+      <td> 2 </td>                
+      <td> <input type="hidden" id="Array2_name" /> <div id="Array2_name_dis"></div> </td>
+      <td> <input type="hidden" id="Array2_watt" /> <div id="Array2_watt_dis"  style="display: inline;" /></div> <div id="Array2_wattunit"  style="display: inline;" /> </div> </td>    
+      <td> <input type="hidden" id="Array2_cost" /> <div id="Array2_cost_dis" style="display: inline;" /></div><div id="Array2_wonunit" style="display: inline;"/> </div> </td>   
+      <td> <input type="hidden" id="Array2_share" />  <div id="Array2_share_dis" style="display: inline;" /></div> <div id="Array2_percent" style="display: inline;"/> </div></td>
+  </tr>      
+  <tr>
+      <td> 3 </td>
+      <td> <input type="hidden" id="Array3_name" /> <div id="Array3_name_dis"></div> </td>
+      <td> <input type="hidden" id="Array3_watt" /> <div id="Array3_watt_dis"  style="display: inline;" /></div> <div id="Array3_wattunit"  style="display: inline;" /> </div> </td>        
+      <td> <input type="hidden" id="Array3_cost" /> <div id="Array3_cost_dis" style="display: inline;" /></div><div id="Array3_wonunit" style="display: inline;"/> </div></td>      
+      <td> <input type="hidden" id="Array3_share" /> <div id="Array3_share_dis" style="display: inline;" /></div> <div id="Array3_percent" style="display: inline;"/> </div></td>                 
+  </tr>
+  <tr>
+      <td> 4  </td>               
+      <td> <input type="hidden" id="Array4_name" /> <div id="Array4_name_dis"></div> </td>
+      <td> <input type="hidden" id="Array4_watt" /> <div id="Array4_watt_dis" style="display: inline;"></div> <div id="Array4_wattunit"  style="display: inline;" /> </div></td>    
+      <td> <input type="hidden" id="Array4_cost" /> <div id="Array4_cost_dis" style="display: inline;" /></div><div id="Array4_wonunit" style="display: inline;"/> </div></td>    
+      <td> <input type="hidden" id="Array4_share" /> <div id="Array4_share_dis" style="display: inline;" /></div> <div id="Array4_percent" style="display: inline;"/> </div></td>                 
+  </tr>
+  <tr>
+      <td> 5 </td>                
+      <td> <input type="hidden" id="Array5_name" /> <div id="Array5_name_dis"></div> </td>
+      <td> <input type="hidden" id="Array5_watt" /> <div id="Array5_watt_dis" style="display: inline;"> </div> <div id="Array5_wattunit" style="display: inline;" /> </div> </td>   
+      <td> <input type="hidden" id="Array5_cost" /> <div id="Array5_cost_dis" style="display: inline;" /></div><div id="Array5_wonunit" style="display: inline;"/> </div> </td>   
+      <td> <input type="hidden" id="Array5_share" /> <div id="Array5_share_dis" style="display: inline;" /></div> <div id="Array5_percent" style="display: inline;"/> </div></td>                 
+  </tr>
+  <tr>
+      <td colspan="5">
+          <div class="hidden2 text-right">※ 사용량: &nbspkW, &nbsp요금: &nbsp원, &nbsp비율: &nbsp% </div> 
+      </td>
+  </tr>
+</table>
+</div>
+
+  <div id="menu3-1" class="tab-pane fade">
+    <table class="table text-center"/>
+      <tr>
+          <th class=" text-center"/> 계절 </th>
+          <th class=" text-center"/> 누진세</th>       
+          <th class=" text-center"/> 요금</th>        
+          <th class=" text-center"/> 사용량</th>       
+      </tr>
+      <tr> 
+          <td> 봄 </td>
+          <td> <div id="spring_level"> </div> <input type="hidden" id="spring_lv"> </td>             
+          <td> <div id="spring_cost"> </div> <input type="hidden" id="spring_cs"> </td>
+          <td> <div id="spring_display"></div> <input type="hidden" id="spring"> </td>        
+      </tr>      
+      <tr>
+          <td> 여름 </td>       
+          <td> <div id="summer_level"> </div> <input type="hidden" id="summer_lv">  </td>       
+          <td> <div id="summer_cost"> </div> <input type="hidden" id="summer_cs">  </td>
+          <td> <div id="summer_display"></div> <input type="hidden" id="summer">  </td>
+      </tr>      
+      <tr>
+          <td> 가을 </td>
+          <td> <div id="fall_level"> </div> <input type="hidden" id="fall_lv"> </td>
+          <td> <div id="fall_cost"> </div> <input type="hidden" id="fall_cs"> </td>
+          <td> <div id="fall_display"></div> <input type="hidden" id="fall"> </td>
+      </tr>
+      <tr>
+          <td> 겨울 </td>       
+          <td> <div id="winter_level"> </div>  <input type="hidden" id="winter_lv"> </td>
+          <td> <div id="winter_cost"> </div>  <input type="hidden" id="winter_cs"> </td>       
+          <td> <div id="winter_display"></div> <input type="hidden" id="winter">  </td>
+      </tr>
+      <tr>
+          <td colspan="4">
+              <div class="hidden2 text-right">※ 누진세: &nbsp단계, &nbsp사용량: &nbspkW, &nbsp요금: &nbsp원 </div> 
+          </td>
+      </tr>      
+    </table>
+    <div class="col-lg-offset-9" style="margin-top: -15px;">
+      <button type="button" class="btn btn-primary btn-inline qstbtn" data-toggle="modal" data-target=".questionnaire2" data-backdrop="true" />설문 참여하기</button>
+    </div>    
+  </div>
+</div>
+</div>
+</div>
+<!-- /.panel-body -->
+</div>
+<!-- /.panel -->
+</div>
+</div>
+
+      <div class="modal modal1 fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" >
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-center">장바구니</h4>
+            </div>
+            <div class="modal-body">
+              <table id="item_view1" class="table shoppingcart item_view1">
+                <th class="text-center">추가 제품</th>
+                <th class="text-center">사용내역</th>  
+                <th class="text-center">삭제</th>  
+              </table>
+            </div>
+            <div class="modal-footer" style="margin-top: -20px;">
+              <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+              <button type="button" class="btn btn-primary">저장하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+
+      <div class="modal modal2 fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-center">장바구니</h4>
+            </div>
+            <div class="modal-body">
+              <table id="item_view2" class="table shoppingcart item_view2">
+                <th class="text-center">추가 제품</th>
+                <th class="text-center">사용내역</th>  
+                <th class="text-center">삭제</th>   
+              </table>
+            </div>
+            <div class="modal-footer" style="margin-top: -20px;">
+              <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+              <button type="button" class="btn btn-primary">저장하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div>  -->
+
+      <div class="modal modal3 fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-center">장바구니</h4>
+            </div>
+            <div class="modal-body">
+              <table id="item_view3" class="table shoppingcart item_view3">
+                <th class="text-center">추가 제품</th>
+                <th class="text-center">사용내역</th>  
+                <th class="text-center">삭제</th>  
+              </table>
+            </div>
+            <div class="modal-footer" style="margin-top: -20px;">
+              <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+              <button type="button" class="btn btn-primary">저장하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div>     -->
+
+      <div class="modal qustionnaire fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-center">장바구니</h4>
+            </div>
+            <div class="modal-body">
+              <table id="item_view3" class="table shoppingcart item_view3">
+                <th class="text-center">추가 제품</th>
+                <th class="text-center">사용내역</th>  
+                <th class="text-center">삭제</th>  
+              </table>
+            </div>
+            <div class="modal-footer" style="margin-top: -20px;">
+              <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+              <button type="button" class="btn btn-primary">저장하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="modal qst_modal fade" id="qst_modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-center">도움말</h4>
+            </div>
+            <div class="modal-body">
+              <h5> 사용방법 </h5>
+                <div class="howto">
+                1. 제품유형, 사용주기, 사용시간 &nbsp;<span class="glyphicon glyphicon-ok" area-hidden="true"></span> 선택 후 <br> 
+                2. 추가 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 해주시면 자동으로 계산됩니다. <br>
+                3. <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>에서 추가 제품과 사용내역 그리고 <span class="glyphicon glyphicon-minus"></span> 하실 수 있습니다. 
+                </div>
+              <hr>
+              <h5> 가전제품 선정기준 </h5>
+                <div class="howto">
+                  에너지관리공단에 시행중인 에너지 효율등급 및 대기전력 프로그램에 해당하는 제품을 기준으로 하였습니다.
+                </div>            
+              <hr>
+              <h5> 제품유형 분류 및 소비전력 </h5>
+                <div class="howto">
+                  각 제품의 규격 등에 따라 분류하였으며 제품유형에 따른 소비전력을 계산하였습니다.    
+                </div>                                                        
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+
+      <div class="modal questionnaire1 col-lg-offset-4 col-lg-5 fade" id="questionnaire1" aria-hidden="true" style="margin-top: -15%;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-center">설문조사1</h4>
+            </div>
+            <div class="modal-body">
+
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-primary">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 17px;font-weight: 700;">
+                        1. 기본 질문
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <form>
+                      <fieldset>
+                            <div class="row form-group" style="padding-left: 3%;padding-top: 3%;"/>
+                              <label class="col-xs-12 col-lg-12 control-label" style="padding-top: 1%;"/>1. 성별을 선택해주세요.</label>
+                              <div class="question-list col-xs-10 col-lg-10"/>
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qsex" id="sex0" value="female"/>
+                                    <div class="questionnaire-ansewer"/> 남 </div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qsex" id="sex1" value="male" checked/>
+                                    <div class="questionnaire-ansewer"/>여</div>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset style="margin-top: -10px;"/>
+                          <div class="row form-group" style="padding-left:3%;"/>
+                            <label class="col-xs-12 col-lg-12 control-label"/> 2. 결혼여부를 선택해주세요.</label>
+                            <div class="question-list col-xs-10 col-lg-10"/>
+                              <div class="radio-inline"/>
+                                <label>
+                                  <input type="radio" name="qmarriage" id="marriage0" value="0" checked onclick="marrigeYear();"/>
+                                  <div class="questionnaire-ansewer"/>미혼</div>
+                                </label>
+                              </div>
+                              <div class="radio-inline"/>
+                                <label>
+                                  <input type="radio" name="qmarriage" id="marriage1" value="1" onclick="marrigeYear();" />
+                                  <div class="questionnaire-ansewer"/>기혼</div>
+                                </label>
+                              </div>
+                            </div>              
+                          </div>
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset style="margin-top: -10px;"/>
+                          <div class="row form-group" style="padding-left:3%;"/>
+                              <label class="col-xs-12 col-lg-12 control-label"/>3. 기혼자라면 몇 년차 이신가요?</label>
+                              <div class="question-list question-list2 col-xs-12 col-lg-12"/>
+                                <div class="radio-inline col-xs-6 question2"/>
+                                  <label>
+                                    <input type="radio" name="qmarriageyear" id="marriageyear1" value="1" disabled="" />
+                                    <div class="questionnaire-ansewer"/>1년차 이하</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline col-xs-6 question5" />
+                                  <label>
+                                    <input type="radio" name="qmarriageyear" id="marriageyear2" value="3" disabled="" checked/>
+                                    <div class="questionnaire-ansewer"/>3년차 이하</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline col-xs-6 question5"/>
+                                  <label>
+                                    <input type="radio" name="qmarriageyear" id="optionsRadios3" value="5" disabled=""/>
+                                    <div class="questionnaire-ansewer"/>5년차 이하</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline col-xs-6 question5"/>
+                                  <label>
+                                    <input type="radio" name="qmarriageyear" id="marriageyear4" value="10" disabled="">
+                                    <div class="questionnaire-ansewer"/>10년차 이하</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline col-xs-6 question5"/>
+                                  <label>
+                                    <input type="radio" name="qmarriageyear" id="marriageyear5" value="11" disabled="">
+                                    <div class="questionnaire-ansewer"/>10년차 이상</div>
+                                  </label>
+                                </div>                    
+                              </div>                                
+                          </div>
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset style="margin-top: -10px;"/>
+                          <div class="row form-group" style="padding-left:3%;"/>
+                              <label class="col-xs-12 col-lg-12 control-label"/>4. 가족 인원수를 선택해주세요.</label>
+                              <div class="question-list col-xs-12 col-lg-12" />
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qfamily" id="family1" value="2" disabled=""/>
+                                    <div class="questionnaire-ansewer"/>2인 이하</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qfamily" id="family2" value="3" disabled="" checked/>
+                                    <div class="questionnaire-ansewer"/>3인</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qfamily" id="family3" disabled="" value="4"/>
+                                    <div class="questionnaire-ansewer"/>4인</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qfamily" id="family4" disabled="" value="5"/>
+                                    <div class="questionnaire-ansewer"/>5인 이상</div>
+                                  </label>
+                                </div>
+                              </div>                
+                          </div> 
+                      </fieldset>
+                    </form>  
+                  </div>
+                </div>
+                <div class="panel panel-primary">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-size: 17px;font-weight: 700;">
+                        2. 가전제품 질문 (다중선택 가능)
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <form>
+                      <fieldset>
+                            <div class="row form-group" style="padding-left: 3%;padding-top: 5%;">
+                              <label class="col-xs-12 col-lg-10 control-label" />1. 가전제품 구입경로를 선택해주세요.</label>
+                              <div class="question-list col-xs-12 col-lg-12" >
+                                <div class="checkbox-inline question4 col-xs-6">
+                                  <label>
+                                    <input type="checkbox" name="path" id="path1" value="recommend" checked>
+                                    <div class="questionnaire-ansewer"> 지인 문의 </div>
+                                  </label>
+                                </div>
+                                <div class="checkbox-inline question3 col-xs-6">
+                                  <label>
+                                    <input type="checkbox" name="path" id="path2" value="internet">
+                                    <div class="questionnaire-ansewer">인터넷 검색</div>
+                                  </label>
+                                </div>
+                                <div class="checkbox-inline question3 col-xs-6">
+                                  <label>
+                                    <input type="checkbox" name="path" id="path3" value="shop">
+                                    <div class="questionnaire-ansewer">매장 직접방문</div>
+                                  </label>
+                                </div>
+                                <div class="checkbox-inline question3 col-xs-6">
+                                  <label>
+                                    <input type="checkbox" name="path" id="path4" value="etc">
+                                    <div class="questionnaire-ansewer">기타</div>
+                                  </label>
+                                </div>                                        
+                              </div>
+                            </div>
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset style="margin-top: -15px;"/>
+                            <div class="row form-group" style="padding-left: 3%;padding-top: 2%;">          
+                              <label class="col-lg-12 control-label" /> 2. 가전제품을 구입함에 있어 중요하게 생각하시는 것은 무엇인가요?</label>
+                              <div class="question-list col-xs-12 col-lg-12" >
+                                <div class="checkbox-inline question4 col-xs-8">
+                                  <label>
+                                    <input type="checkbox" name="standard" id="standard1" value="familyplan" checked="">
+                                    <div class="questionnaire-ansewer">앞으로의 가족계획</div>
+                                  </label>
+                                </div>
+                                <div class="checkbox-inline question3 col-xs-12">
+                                  <label>
+                                    <input type="checkbox" name="standard" id="standard2" value="budget">
+                                    <div class="questionnaire-ansewer">구입 계획자금</div>
+                                  </label>
+                                </div>
+                                <div class="checkbox-inline question3 col-xs-12">
+                                  <label>
+                                    <input type="checkbox" name="standard" id="standard3" value="brand">
+                                    <div class="questionnaire-ansewer">브랜드</div>
+                                  </label>
+                                </div>
+                                <br>
+                                <div class="checkbox-inline question4 col-xs-12">
+                                  <label>
+                                    <input type="checkbox" name="standard" id="standard4" value="AfterService">
+                                    <div class="questionnaire-ansewer">A/S 등 유지관리 서비스 </div>
+                                  </label>
+                                </div>                                        
+                              </div>            
+                            </div>
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset style="margin-top: -15px;"/>
+                            <div class="row form-group" style="padding-left: 3%;">         
+                              <label class="col-lg-12 control-label" style="padding-top: 2%;">3. 혹시 귀하의 가정에서 사용중이지만 전기세 계산기에서 누락되어 있는 &nbsp;가전제품은 무엇입니까?</label>
+                              <div class="question-list col-xs-12 col-lg-12" >
+                                <div class="checkbox-inline question4 col-xs-12">
+                                  <label>
+                                    <input type="checkbox" name="applianceCheck" id="applianceCheck1" value="kitchen" checked="">
+                                    <div class="questionnaire-ansewer">커피머신 등 주방 제품</div>
+                                  </label>
+                                </div>
+                                <div class="checkbox-inline question3  col-xs-12">
+                                  <label>
+                                    <input type="checkbox" name="applianceCheck" id="applianceCheck2" value="seasonal">
+                                    <div class="questionnaire-ansewer">제습기 등 계절 제품</div>
+                                  </label>
+                                </div>
+                                <div class="checkbox-inline question3  col-xs-12">
+                                  <label>
+                                    <input type="checkbox" name="applianceCheck" id="applianceCheck3" value="lamp">
+                                    <div class="questionnaire-ansewer">LED 및 형광등 관련 제품</div>
+                                  </label>
+                                </div>
+                                <div class="checkbox-inline question3  col-xs-12">
+                                  <label>
+                                    <input type="checkbox" name="applianceCheck" id="applianceCheck4" value="vacuum">
+                                    <div class="questionnaire-ansewer">청소기 등 위생제품</div>
+                                  </label>
+                                </div>
+                                <div class="checkbox-inline question3  col-xs-12">
+                                  <label>
+                                    <input type="checkbox" name="applianceCheck" id="applianceCheck5" value="etc">
+                                    <div class="questionnaire-ansewer">기타</div>
+                                  </label>
+                                </div>                                        
+                              </div>
+                            <div class="col-xs-12 col-sm-7 col-lg-10" >
+                              <textarea class="form-control textArea2" rows="2" id="textArea" name="textArea" data-gramm="" placeholder="구체적으로 기재해주시면 적극 반영하도록 하겠습니다." data-txt_gramm_id="f2200c12-5e59-e390-41d4-7fb3e30653b5" ></textarea>
+                            </div>                         
+                            </div> 
+                      </fieldset>
+                    </form>   
+                  </div>
+                </div>
+              </div>     
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-inline" onclick="sendingsheet();" />설문 완료</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div>   -->
+
+      <div class="modal questionnaire2 fade col-lg-offset-4 col-lg-5" id="questionnaire2" aria-hidden="true" style="margin-top: -15%;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-center">설문조사2</h4>
+            </div>
+            <div class="modal-body">
+              <div class="panel panel-primary">
+                <div class="panel-heading" style="font-size: 17px;font-weight: 700;">3. 서비스 평가질문</div>
+                  <div class="panel-body">
+                    <form>
+                      <fieldset style="padding-top: 15px;">
+                        <div class="row form-group" style="padding-left: 3%;">         
+                          <label class="col-xs-12 col-lg-12 control-label"/>1. 가전별 패턴에 대한 점수를 선택해주세요.</label>
+                          <div class="question-list col-xs-12 col-lg-12" >
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_1" id="patternscore11" value="1"/>
+                                <div class="questionnaire-ansewer"> 1점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_1" id="patternscore12" value="2"/>
+                                <div class="questionnaire-ansewer"> 2점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_1" id="patternscore13" value="3"/>
+                                <div class="questionnaire-ansewer"> 3점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_1" id="patternscore14" value="4" checked/>
+                                <div class="questionnaire-ansewer"> 4점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline question6">
+                              <label>
+                                <input type="radio" name="patternscore_1" id="patternscore15" value="5"/>
+                                <div class="questionnaire-ansewer"> 5점 </div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset style="margin-top: -7px;"/>
+                        <div class="row form-group" style="padding-left: 3%;">         
+                          <label class="col-lg-12 control-label"/>2. 제품별 패턴에 대한 점수를 선택해주세요.</label>
+                          <div class="question-list col-lg-12" >
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_2" id="patternscore21" value="1"/>
+                                <div class="questionnaire-ansewer"> 1점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_2" id="patternscore22" value="2"/>
+                                <div class="questionnaire-ansewer"> 2점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_2" id="patternscore23" value="3"/>
+                                <div class="questionnaire-ansewer"> 3점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_2" id="patternscore24" value="4" checked/>
+                                <div class="questionnaire-ansewer"> 4점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline question6">
+                              <label>
+                                <input type="radio" name="patternscore_2" id="patternscore25" value="5"/>
+                                <div class="questionnaire-ansewer"> 5점 </div>
+                              </label>
+                            </div>
+                          </div>              
+                        </div>
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset style="margin-top: -7px;"/>
+                        <div class="row form-group" style="padding-left: 3%;">
+                          <label class="col-lg-12 control-label"/>3. 연간 패턴에 대한 점수를 선택해주세요.</label>
+                          <div class="question-list col-lg-12" >
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_3" id="patternscore31" value="1"/>
+                                <div class="questionnaire-ansewer"> 1점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_3" id="patternscore32" value="2"/>
+                                <div class="questionnaire-ansewer"> 2점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_3" id="patternscore33" value="3"/>
+                                <div class="questionnaire-ansewer"> 3점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline">
+                              <label>
+                                <input type="radio" name="patternscore_3" id="patternscore34" value="4" checked/>
+                                <div class="questionnaire-ansewer"> 4점 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline question6">
+                              <label>
+                                <input type="radio" name="patternscore_3" id="patternscore35" value="5"/>
+                                <div class="questionnaire-ansewer"> 5점 </div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>            
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset style="margin-top: -7px;"/>
+                        <div class="row form-group" style="padding-left: 3%;">
+                          <label class="col-lg-12 control-label"/>4. 전기세 계산기를 사용하면서 불편하신 점이 있으신가요?</label>
+                          <div class="question-list col-xs-12 col-lg-12" >
+                            <div class="radio-inline col-xs-8">
+                              <label>
+                                <input type="radio" name="patternscore_4" id="patternscore41" value="no" checked/>
+                                <div class="questionnaire-ansewer"> 없다 </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline question8 col-xs-10">
+                              <label>
+                                <input type="radio" name="patternscore_4" id="patternscore42" value="so many"/>
+                                <div class="questionnaire-ansewer"> 가전제품 선택개수가 많다. </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline question8 col-xs-10">
+                              <label>
+                                <input type="radio" name="patternscore_4" id="patternscore43" value="font size"/>
+                                <div class="questionnaire-ansewer"> 결과창의 글씨가 작다. </div>
+                              </label>
+                            </div>
+                            <div class="radio-inline question8 col-xs-12">
+                              <label>
+                                <input type="radio" name="patternscore_4" id="patternscore44" value="watt vision"/>
+                                <div class="questionnaire-ansewer"> 내가 선택한 가전제품의 소비전력을 보고싶다. </div>
+                              </label>
+                            </div>
+                            <!--  -->
+                            <div class="radio-inline question8 col-xs-12">
+                              <label>
+                                <input type="radio" name="patternscore_4" id="patternscore54" value="etc"/>
+                                <div class="questionnaire-ansewer"> 기타 </div>
+                              </label>                  
+                            </div>
+                            <!--  -->
+                          </div>
+                          <div class="col-xs-12 col-sm-7 col-lg-12" >
+                            <textarea class="form-control textArea2" rows="2" id="textArea" name="textArea" data-gramm="" placeholder="구체적으로 기재해주시면 적극 반영하도록 하겠습니다." data-txt_gramm_id="f2200c12-5e59-e390-41d4-7fb3e30653b5" ></textarea>
+                          </div>              
+                        </div>
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset>
+                        <div class="row form-group form_button"/>
+                          <span class="col-xs-offset-8 col-xs-4 col-sm-offset-5 col-sm-6 col-lg-7 col-lg-offset-6">
+                            <button type="button" class="btn btn-primary btn-inline" onclick="sendingsheet3();" />설문 완료</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">확인</button>
+                          </span>
+                          <div class="text-center thankyou" id="thankyou"> </div>
+                        </div>            
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- </div>   -->
+
+<!--  -->
+
+  <!-- questionnaire-form -->
+  <div class="container qsttitle col-xs-offset-0 col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-lg-8">
+        <h3 class="lead2 questionnaire"/> '우리집 전기세'의 개선을 위해 <br> 설문조사에 참여해주셔서 감사합니다!  </h3>     
+  </div>
+
+  <div class="container bs-layout col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-8 col-lg-offset-2">
+          <div class="panel-group" id="accordion1">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">1. 기본 질문</a>
+                </h4>
+              </div>
+                <div id="collapseOne1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <form>
+                      <fieldset>
+                            <div class="row form-group" style="padding-left: 3%;padding-top: 3%;"/>
+                              <label class="col-xs-12 col-lg-5 control-label" style="padding-top: 1%;"/>1. 성별을 선택해주세요.</label>
+                              <div class="question-list col-xs-10 col-lg-10"/>
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qsex" id="sex0" value="female"/>
+                                    <div class="questionnaire-ansewer"/> 남 </div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qsex" id="sex1" value="male" checked/>
+                                    <div class="questionnaire-ansewer"/>여</div>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset style="margin-top: -10px;"/>
+                          <div class="row form-group" style="padding-left:3%;"/>
+                            <label class="col-xs-12 col-lg-12 control-label"/> 2. 결혼여부를 선택해주세요.</label>
+                            <div class="question-list col-xs-10 col-lg-10"/>
+                              <div class="radio-inline"/>
+                                <label>
+                                  <input type="radio" name="qmarriage" id="marriage0" value="0" checked onclick="marrigeYear();"/>
+                                  <div class="questionnaire-ansewer"/>미혼</div>
+                                </label>
+                              </div>
+                              <div class="radio-inline"/>
+                                <label>
+                                  <input type="radio" name="qmarriage" id="marriage1" value="1" onclick="marrigeYear();" />
+                                  <div class="questionnaire-ansewer"/>기혼</div>
+                                </label>
+                              </div>
+                            </div>              
+                          </div>
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset style="margin-top: -10px;"/>
+                          <div class="row form-group" style="padding-left:3%;"/>
+                              <label class="col-xs-12 col-lg-12 control-label"/>3. 기혼자라면 몇 년차 이신가요?</label>
+                              <div class="question-list question-list2 col-xs-12 col-lg-10"/>
+                                <div class="radio-inline col-xs-6 question2"/>
+                                  <label>
+                                    <input type="radio" name="qmarriageyear" id="marriageyear1" value="1" disabled="" />
+                                    <div class="questionnaire-ansewer"/>1년차 이하</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline col-xs-6 question5" />
+                                  <label>
+                                    <input type="radio" name="qmarriageyear" id="marriageyear2" value="3" disabled="" checked/>
+                                    <div class="questionnaire-ansewer"/>3년차 이하</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline col-xs-6 question5"/>
+                                  <label>
+                                    <input type="radio" name="qmarriageyear" id="optionsRadios3" value="5" disabled=""/>
+                                    <div class="questionnaire-ansewer"/>5년차 이하</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline col-xs-6 question5"/>
+                                  <label>
+                                    <input type="radio" name="qmarriageyear" id="marriageyear4" value="10" disabled="">
+                                    <div class="questionnaire-ansewer"/>10년차 이하</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline col-xs-6 question5"/>
+                                  <label>
+                                    <input type="radio" name="qmarriageyear" id="marriageyear5" value="11" disabled="">
+                                    <div class="questionnaire-ansewer"/>10년차 이상</div>
+                                  </label>
+                                </div>                    
+                              </div>                                
+                          </div>
+                      </fieldset>
+                    </form>
+                    <form>
+                      <fieldset style="margin-top: -10px;"/>
+                          <div class="row form-group" style="padding-left:3%;"/>
+                              <label class="col-xs-12 col-lg-12 control-label"/>4. 가족 인원수를 선택해주세요.</label>
+                              <div class="question-list col-xs-12 col-lg-10" />
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qfamily" id="family1" value="2" disabled=""/>
+                                    <div class="questionnaire-ansewer"/>2인 이하</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qfamily" id="family2" value="3" disabled="" checked/>
+                                    <div class="questionnaire-ansewer"/>3인</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qfamily" id="family3" disabled="" value="4"/>
+                                    <div class="questionnaire-ansewer"/>4인</div>
+                                  </label>
+                                </div>
+                                <div class="radio-inline"/>
+                                  <label>
+                                    <input type="radio" name="qfamily" id="family4" disabled="" value="5"/>
+                                    <div class="questionnaire-ansewer"/>5인 이상</div>
+                                  </label>
+                                </div>
+                              </div>                
+                          </div> 
+                      </fieldset>
+                    </form>  
+                  </div> <!-- panel-body -->
+                </div> <!-- panel-collapse -->
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo2">2. 가전제품 질문 (다중선택 가능)</a>
+                  </h4>
+              </div>
+              <div id="collapseTwo2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <form>
+                    <fieldset>
+                          <div class="row form-group" style="padding-left: 3%;padding-top: 5%;">
+                            <label class="col-xs-12 col-lg-10 control-label" />1. 가전제품 구입경로를 선택해주세요.</label>
+                            <div class="question-list col-xs-12 col-lg-10" >
+                              <div class="checkbox-inline question4 col-xs-6">
+                                <label>
+                                  <input type="checkbox" name="path" id="path1" value="recommend" checked>
+                                  <div class="questionnaire-ansewer"> 지인 문의 </div>
+                                </label>
+                              </div>
+                              <div class="checkbox-inline question3 col-xs-6">
+                                <label>
+                                  <input type="checkbox" name="path" id="path2" value="internet">
+                                  <div class="questionnaire-ansewer">인터넷 검색</div>
+                                </label>
+                              </div>
+                              <div class="checkbox-inline question3 col-xs-6">
+                                <label>
+                                  <input type="checkbox" name="path" id="path3" value="shop">
+                                  <div class="questionnaire-ansewer">매장 직접방문</div>
+                                </label>
+                              </div>
+                              <div class="checkbox-inline question3 col-xs-6">
+                                <label>
+                                  <input type="checkbox" name="path" id="path4" value="etc">
+                                  <div class="questionnaire-ansewer">기타</div>
+                                </label>
+                              </div>                                        
+                            </div>
+                          </div>
+                    </fieldset>
+                  </form>
+                  <form>
+                    <fieldset style="margin-top: -15px;"/>
+                          <div class="row form-group" style="padding-left: 3%;padding-top: 2%;">          
+                            <label class="col-lg-12 control-label" /> 2. 가전제품을 구입함에 있어 중요하게 생각하시는 것은 무엇인가요?</label>
+                            <div class="question-list col-xs-12 col-lg-10" >
+                              <div class="checkbox-inline question4 col-xs-8">
+                                <label>
+                                  <input type="checkbox" name="standard" id="standard1" value="familyplan" checked="">
+                                  <div class="questionnaire-ansewer">앞으로의 가족계획</div>
+                                </label>
+                              </div>
+                              <div class="checkbox-inline question3 col-xs-12">
+                                <label>
+                                  <input type="checkbox" name="standard" id="standard2" value="budget">
+                                  <div class="questionnaire-ansewer">구입 계획자금</div>
+                                </label>
+                              </div>
+                              <div class="checkbox-inline question3 col-xs-12">
+                                <label>
+                                  <input type="checkbox" name="standard" id="standard3" value="brand">
+                                  <div class="questionnaire-ansewer">브랜드</div>
+                                </label>
+                              </div>
+                              <br>
+                              <div class="checkbox-inline question4 col-xs-12">
+                                <label>
+                                  <input type="checkbox" name="standard" id="standard4" value="AfterService">
+                                  <div class="questionnaire-ansewer">A/S 등 유지관리 서비스 </div>
+                                </label>
+                              </div>                                        
+                            </div>            
+                          </div>
+                    </fieldset>
+                  </form>
+                  <form>
+                    <fieldset style="margin-top: -15px;"/>
+                          <div class="row form-group" style="padding-left: 3%;">         
+                            <label class="col-lg-12 control-label" style="padding-top: 2%;">3. 혹시 귀하의 가정에서 사용중이지만 전기세 계산기에서 누락되어 있는 가전제품은 무엇입니까?</label>
+                            <div class="question-list col-xs-12 col-lg-10" >
+                              <div class="checkbox-inline question4 col-xs-12">
+                                <label>
+                                  <input type="checkbox" name="applianceCheck" id="applianceCheck1" value="kitchen" checked="">
+                                  <div class="questionnaire-ansewer">커피머신 등 주방 제품</div>
+                                </label>
+                              </div>
+                              <div class="checkbox-inline question3  col-xs-12">
+                                <label>
+                                  <input type="checkbox" name="applianceCheck" id="applianceCheck2" value="seasonal">
+                                  <div class="questionnaire-ansewer">제습기 등 계절 제품</div>
+                                </label>
+                              </div>
+                              <div class="checkbox-inline question3  col-xs-12">
+                                <label>
+                                  <input type="checkbox" name="applianceCheck" id="applianceCheck3" value="lamp">
+                                  <div class="questionnaire-ansewer">LED 및 형광등 관련 제품</div>
+                                </label>
+                              </div>
+                              <div class="checkbox-inline question3  col-xs-12">
+                                <label>
+                                  <input type="checkbox" name="applianceCheck" id="applianceCheck4" value="vacuum">
+                                  <div class="questionnaire-ansewer">청소기 등 위생제품</div>
+                                </label>
+                              </div>
+                              <div class="checkbox-inline question3  col-xs-12">
+                                <label>
+                                  <input type="checkbox" name="applianceCheck" id="applianceCheck5" value="etc">
+                                  <div class="questionnaire-ansewer">기타</div>
+                                </label>
+                              </div>                                        
+                            </div>
+                          <div class="col-xs-12 col-sm-7 col-lg-10" >
+                            <textarea class="form-control textArea2" rows="2" id="textArea" name="textArea" data-gramm="" placeholder="구체적으로 기재해주시면 적극 반영하도록 하겠습니다." data-txt_gramm_id="f2200c12-5e59-e390-41d4-7fb3e30653b5" ></textarea>
+                          </div>                         
+                          </div> 
+                    </fieldset>
+                  </form>      
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree3">3. 서비스 평가질문</a>
+                  </h4>
+              </div>
+              <div id="collapseThree3" class="panel-collapse collapse">
+                <div class="panel-body">
+            <form>
+              <fieldset style="padding-top: 15px;">
+                <div class="row form-group" style="padding-left: 3%;">         
+                  <label class="col-xs-12 col-lg-12 control-label"/>1. 가전별 패턴에 대한 점수를 선택해주세요.</label>
+                  <div class="question-list col-xs-12 col-lg-10" >
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_1" id="patternscore11" value="1"/>
+                        <div class="questionnaire-ansewer"> 1점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_1" id="patternscore12" value="2"/>
+                        <div class="questionnaire-ansewer"> 2점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_1" id="patternscore13" value="3"/>
+                        <div class="questionnaire-ansewer"> 3점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_1" id="patternscore14" value="4" checked/>
+                        <div class="questionnaire-ansewer"> 4점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline question6">
+                      <label>
+                        <input type="radio" name="patternscore_1" id="patternscore15" value="5"/>
+                        <div class="questionnaire-ansewer"> 5점 </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+            <form>
+              <fieldset style="margin-top: -7px;"/>
+                <div class="row form-group" style="padding-left: 3%;">         
+                  <label class="col-lg-12 control-label"/>2. 제품별 패턴에 대한 점수를 선택해주세요.</label>
+                  <div class="question-list col-lg-10" >
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_2" id="patternscore21" value="1"/>
+                        <div class="questionnaire-ansewer"> 1점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_2" id="patternscore22" value="2"/>
+                        <div class="questionnaire-ansewer"> 2점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_2" id="patternscore23" value="3"/>
+                        <div class="questionnaire-ansewer"> 3점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_2" id="patternscore24" value="4" checked/>
+                        <div class="questionnaire-ansewer"> 4점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline question6">
+                      <label>
+                        <input type="radio" name="patternscore_2" id="patternscore25" value="5"/>
+                        <div class="questionnaire-ansewer"> 5점 </div>
+                      </label>
+                    </div>
+                  </div>              
+                </div>
+              </fieldset>
+            </form>
+            <form>
+              <fieldset style="margin-top: -7px;"/>
+                <div class="row form-group" style="padding-left: 3%;">
+                  <label class="col-lg-12 control-label"/>3. 연간 패턴에 대한 점수를 선택해주세요.</label>
+                  <div class="question-list col-lg-10" >
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_3" id="patternscore31" value="1"/>
+                        <div class="questionnaire-ansewer"> 1점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_3" id="patternscore32" value="2"/>
+                        <div class="questionnaire-ansewer"> 2점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_3" id="patternscore33" value="3"/>
+                        <div class="questionnaire-ansewer"> 3점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="patternscore_3" id="patternscore34" value="4" checked/>
+                        <div class="questionnaire-ansewer"> 4점 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline question6">
+                      <label>
+                        <input type="radio" name="patternscore_3" id="patternscore35" value="5"/>
+                        <div class="questionnaire-ansewer"> 5점 </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>            
+              </fieldset>
+            </form>
+            <form>
+              <fieldset style="margin-top: -7px;"/>
+                <div class="row form-group" style="padding-left: 3%;">
+                  <label class="col-lg-12 control-label"/>4. 전기세 계산기를 사용하면서 불편하신 점이 있으신가요?</label>
+                  <div class="question-list col-xs-12 col-lg-10" >
+                    <div class="radio-inline col-xs-8">
+                      <label>
+                        <input type="radio" name="patternscore_4" id="patternscore41" value="no" checked/>
+                        <div class="questionnaire-ansewer"> 없다 </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline question8 col-xs-10">
+                      <label>
+                        <input type="radio" name="patternscore_4" id="patternscore42" value="so many"/>
+                        <div class="questionnaire-ansewer"> 가전제품 선택개수가 많다. </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline question8 col-xs-10">
+                      <label>
+                        <input type="radio" name="patternscore_4" id="patternscore43" value="font size"/>
+                        <div class="questionnaire-ansewer"> 결과창의 글씨가 작다. </div>
+                      </label>
+                    </div>
+                    <div class="radio-inline question8 col-xs-12">
+                      <label>
+                        <input type="radio" name="patternscore_4" id="patternscore44" value="watt vision"/>
+                        <div class="questionnaire-ansewer"> 내가 선택한 가전제품의 소비전력을 보고싶다. </div>
+                      </label>
+                    </div>
+                    <!--  -->
+                    <div class="radio-inline question8 col-xs-12">
+                      <label>
+                        <input type="radio" name="patternscore_4" id="patternscore54" value="watt vision"/>
+                        <div class="questionnaire-ansewer"> 기타 </div>
+                      </label>                  
+                    </div>
+                    <!--  -->
+                  </div>
+                  <div class="col-xs-12 col-sm-7 col-lg-10" >
+                    <textarea class="form-control textArea2" rows="2" id="textArea" name="textArea" data-gramm="" placeholder="구체적으로 기재해주시면 적극 반영하도록 하겠습니다." data-txt_gramm_id="f2200c12-5e59-e390-41d4-7fb3e30653b5" ></textarea>
+                  </div>              
+                </div>
+              </fieldset>
+            </form>
+            <form>
+              <fieldset>
+                <div class="row form-group form_button"/>
+                  <span class="col-xs-offset-8 col-xs-4 col-sm-offset-5 col-sm-6 col-lg-5 col-lg-offset-7">
+                    <button type="button" class="btn btn-primary btn-inline " onclick="sendingsheet();" />설문 완료</button>
+                  </span>
+                  <div class="text-center thankyou" id="thankyou">  </div>
+                </div>            
+              </fieldset>
+            </form>
+          </div><!--/panel-body-->
+         </div><!--/panel--> 
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <hr>
+      <address>
+        <strong>우리집 전기세</strong><br>
+        서울시 강남구 논현동 277-27 하이브아레나<br>
+        Contact : bexellenting@gmail.com
+      </address>
+    </div>
+
+  </body>
+
+  <script type="text/javascript">
+  // pure JS
+  var elem = document.getElementById('mySwipe');
+  window.mySwipe = Swipe(elem, {
+    // startSlide: 4,
+    // auto: 3000,
+    continuous: false,
+    // disableScroll: true,
+    stopPropagation: true,
+    // callback: function(index, element) {},
+    // transitionEnd: function(index, element) {}
+  });
+  </script>
+</html>
