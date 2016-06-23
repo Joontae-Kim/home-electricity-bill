@@ -1,0 +1,474 @@
+body {
+  -webkit-text-size-adjust:none;
+  font-family:sans-serif;
+  min-height:416px;
+}
+
+h1 {
+  font-size:33px;
+  margin:50px 0 15px;
+  text-align:center;
+  color:#212121;
+}
+
+a {
+  margin:0 0 0 10px;
+  font-size:12px;
+  color:#3c3c3c;
+}
+
+#console {
+  font-size: 12px;
+  font-family:"Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  color: #999;
+  line-height: 18px;
+  margin-top: 20px;
+  max-height: 150px;
+  overflow: auto;
+}
+
+#mySwipe div b {
+  display:block;
+  font-weight:bold;
+  font-size:20px;
+  text-align:center;
+  height: 470px;
+  width: 380px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+}
+
+.swipe {
+  width: 360px;
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap > div {
+  float:left;
+  position: relative;
+}
+
+
+@media (min-width: 360px) and (max-width: 379px) {
+  #mySwipe div b {
+      display: block;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      height: 470px;
+      width: 300px;
+      background: #FFFFFF;
+      border-radius: 3px;
+      border: 1px solid;
+      border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+      margin-left: 8px;
+  }
+
+  .panel1 > .panel-body > .swipe{
+    width: 310px;
+    margin-left: -9%;
+    max-width:380px;
+  }
+
+  .first_form_title{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .name{
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .name_input{
+    vertical-align: middle;
+    margin-left:20px;
+  }
+
+  .sex{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 7px;
+  }
+
+  .sex_input{
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 6px;
+  }
+
+  .housetype{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 8px;
+    padding-left: 14px;
+  }
+
+  .housetype_total_input{
+    margin-left: -15px;
+  }
+
+  .housetype_radio1 ,.housetype_radio2 ,.housetype_radio3 {
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  .housetype_radio3{
+    margin-left: -5.5px;
+  }  
+
+  .family{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 20px;
+  }
+
+  .familytype_total_input{
+    font-weight: normal;
+    margin-left: -6px;
+  }
+
+  .family_radio1 ,.family_radio2 ,.family_radio3 {
+    font-weight: normal;
+    font-size: 15px;
+    padding-right: 4px;
+  }
+}
+
+
+@media (min-width: 380px) and (max-width: 480px) {
+
+#mySwipe div b {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    height: 470px;
+    width: 312px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+    margin-left: 8px;
+
+}
+
+  .panel1 > .panel-body > .swipe{
+    margin-left: -19px;
+    width: 350px;
+  }
+
+
+  .first_form_title{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .name{
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .name_input{
+    vertical-align: middle;
+    margin-left:20px;
+  }
+
+  .sex{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 7px;
+  }
+
+  .sex_input{
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  .housetype{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 8px;
+    padding-left: 13px;
+  }
+
+  .housetype_total_input{
+    margin-left: -10px;
+  }
+
+  .housetype_radio1 ,.housetype_radio2 ,.housetype_radio3 {
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  .housetype_radio3 {
+    margin-left: -2px;
+  }
+
+  .family{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 22px;
+  }
+
+  .familytype_total_input{
+    font-weight: normal;
+    margin-left: -7px;
+  }
+
+  .family_radio1 ,.family_radio2 ,.family_radio3 {
+    font-weight: normal;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .first_form_title{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .name{
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .name_input{
+    vertical-align: middle;
+    margin-left:20px;
+  }
+
+  .sex{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 7px;
+  }
+
+  .sex_input{
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  .housetype{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 26px;
+  }
+
+  .housetype_total_input{
+    margin-left: -8px;
+  }
+
+  .housetype_radio1 ,.housetype_radio2 ,.housetype_radio3 {
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  .housetype_radio3 {
+    margin-left: -1px;
+  }
+
+  .family{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 14px;
+  }
+
+  .familytype_total_input{
+    font-weight: normal;
+    margin-left: 1px;
+  }
+
+  .family_radio1 ,.family_radio2 ,.family_radio3 {
+    font-weight: normal;
+    font-size: 15px;
+  }  
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {    
+
+#mySwipe div b {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    height: 470px;
+    width: 340px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+}
+
+  .first_form_title{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .name{
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .name_input{
+    vertical-align: middle;
+    margin-left:20px;
+  }
+
+  .sex{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 7px;
+  }
+
+  .sex_input{
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  .housetype{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 26px;
+  }
+
+  .housetype_total_input{
+    margin-left: -29px;
+  }
+
+  .housetype_radio1 ,.housetype_radio2 ,.housetype_radio3 {
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  .housetype_radio3 {
+    padding-right: 24px;
+  }
+
+  .family{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 14px;
+  }
+
+  .familytype_total_input{
+    font-weight: normal;
+    margin-left: -9px;
+  }
+
+  .family_radio1 ,.family_radio2 ,.family_radio3 {
+    font-weight: normal;
+    font-size: 15px;
+  }  
+}
+
+@media (min-width: 1200px) {
+  #mySwipe div b {
+    display:block;
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+    height: 470px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+    margin-left: 7%;
+  }
+
+  .first_form_title{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .name{
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .name_input{
+    vertical-align: middle;
+    margin-left:8%;
+  }
+
+  .sex{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 7px;
+  }
+
+  .sex_input{
+    font-weight: normal;
+    font-size: 15px;
+    margin-left: 0.5%;
+    margin-top: 2%;
+  }
+
+  .housetype_total_input{
+    margin-left: -15.8%;
+    margin-top: 4%;
+  }
+
+  .housetype{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 6.1%;
+  }
+
+  .housetype_radio1 ,.housetype_radio2 ,.housetype_radio3 {
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  .housetype_radio3 {
+    margin-left: -6.5%;
+  }
+
+  .family{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: -2%;
+    margin-left: 3.3%;
+  }
+
+  .familytype_total_input{
+    font-weight: normal;
+    margin-left: -1.5%;
+  }
+
+  .family_radio1 ,.family_radio2 ,.family_radio3 {
+    font-weight: normal;
+    font-size: 15px;
+  }  
+}
+
+
+
